@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1653912934 source:c:\users\thinkpad\desktop\s4 plateforme\structure de données\sudoku\resolve.c
+	"sudoku.h"
+	"genere.h"
+
+1653913412 c:\users\thinkpad\desktop\s4 plateforme\structure de données\sudoku\sudoku.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1653913427 source:c:\users\thinkpad\desktop\s4 plateforme\structure de données\sudoku\genere.c
+	"sudoku.h"
+	"genere.h"
+
+1653913439 source:c:\users\thinkpad\desktop\s4 plateforme\structure de données\sudoku\main.c
+	"sudoku.h"
+	"genere.h"
+
+1653912521 c:\users\thinkpad\desktop\s4 plateforme\structure de données\sudoku\genere.h
+

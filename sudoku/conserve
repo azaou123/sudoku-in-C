@@ -1,0 +1,53 @@
+//Resolve 1
+void resolve(void)
+/**********/
+{/* Attention, fonction recursive... */
+. int ligne, col, nbre, nbre_tamp;
+. for (ligne = 0; ligne < MAX; ligne++) {
+. . for (col = 0; col < MAX; col++) {
+. . . if (grille[ligne][col]) continue;
+. . . for (nbre = 1; nbre <= MAX; nbre++) {
+. . . . if (! case_dispo_nbre(nbre, ligne, col)) continue;
+. . . . nbre_tamp = grille[ligne][col];
+. . . . grille[ligne][col] = nbre;
+. . . . g_comp_tests++;
+. . . . if (g_flag_affiche) affiche_grille_attente();
+. . . . resolve();
+. . . . if (grille_finie()) return;
+. . . . /* pour voir toutes les solutions des grilles
+. . . . a solutions multiples
+. . . . mettre en rem la ligne du dessus et
+. . . . retirer le rem de la ligne du dessous */
+. . . . /* if (grille_finie()) affiche_grille_attente(); */
+. . . . grille[ligne][col] = nbre_tamp;
+. . . }/* end for nbre */
+. . . return;
+. . }/* end for col */
+. }/* end for ligne */
+. return;
+}/* end resolve */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
