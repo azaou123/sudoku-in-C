@@ -1,8 +1,6 @@
 #include"sudoku.h"
 #include"genere.h"
 
-
-
 //Fonctions de Verification
 int existeLigne (int ligne , int element){
     int existe = 0 , l ;
@@ -82,15 +80,6 @@ int generatee (void){
     return 0;
 }
 
-
-
-
-
-
-
-
-
-
 /**********************************************************************************/
 int is_exist_row(int grid[N][N], int row, int num){
 	for (int col = 0; col < 9; col++) {
@@ -152,19 +141,3 @@ int solve(int grid[N][N]){
 }
 
 /***********************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
